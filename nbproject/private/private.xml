@@ -3,12 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/krishnaraj/NetBeansProjects/UI-MACH%201/src/inner/panels/Date.java</file>
-            <file>file:/home/krishnaraj/NetBeansProjects/UI-MACH%201/src/View/DoctorView.java</file>
-            <file>file:/home/krishnaraj/NetBeansProjects/UI-MACH%201/src/View/PatientView.java</file>
-            <file>file:/home/krishnaraj/NetBeansProjects/UI-MACH%201/src/main.java</file>
-            <file>file:/home/krishnaraj/NetBeansProjects/UI-MACH%201/src/inner/panels/Home.java</file>
-            <file>file:/home/krishnaraj/NetBeansProjects/UI-MACH%201/src/inner/panels/PRESCRIBE.java</file>
+            <file>file:/home/krishnaraj/homeland_healthcare/src/main.java</file>
+            <file>file:/home/krishnaraj/homeland_healthcare/src/main/panels/doctor.java</file>
         </group>
     </open-files>
 </project-private>

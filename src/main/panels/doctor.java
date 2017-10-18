@@ -45,6 +45,8 @@ public class doctor extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(63, 44, 26));
+
         jbtnLogin.setText("LOGIN");
         jbtnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,6 +130,7 @@ public class doctor extends javax.swing.JPanel {
               DoctorView info;
                 info = new View.DoctorView();
              info.setVisible(true);
+               
                 
                
 
