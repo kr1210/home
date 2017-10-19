@@ -30,7 +30,7 @@ public class main extends javax.swing.JFrame {
         c.gridx = 0;
         c.gridy = 0;
         DynamicPanel.add(p2,c);
-        p1.setVisible(false);
+        p1.setVisible(true);
         p2.setVisible(false);
     }
 

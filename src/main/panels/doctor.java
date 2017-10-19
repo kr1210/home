@@ -13,6 +13,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import View.DoctorView;
+import frames.doctorHome;
 
 
 /**
@@ -37,15 +38,15 @@ public class doctor extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jtxtUserName = new javax.swing.JTextField();
-        jtxtPassword = new javax.swing.JPasswordField();
+        idField = new javax.swing.JTextField();
+        passwordField = new javax.swing.JPasswordField();
         jbtnLogin = new javax.swing.JButton();
         jbtnReset = new javax.swing.JButton();
         jbtnExit = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(63, 44, 26));
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jbtnLogin.setText("LOGIN");
         jbtnLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -91,8 +92,8 @@ public class doctor extends javax.swing.JPanel {
                         .addGap(51, 51, 51)
                         .addComponent(jbtnExit))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jtxtUserName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
-                        .addComponent(jtxtPassword, javax.swing.GroupLayout.Alignment.LEADING)))
+                        .addComponent(idField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                        .addComponent(passwordField, javax.swing.GroupLayout.Alignment.LEADING)))
                 .addContainerGap(167, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -101,11 +102,11 @@ public class doctor extends javax.swing.JPanel {
                 .addGap(65, 65, 65)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addComponent(jtxtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(idField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(58, 58, 58)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(jtxtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbtnLogin)
@@ -115,53 +116,29 @@ public class doctor extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jbtnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnLoginActionPerformed
-        try
-        {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","root","krishnaraj");
-            String sql = "Select * from test where username=? and password=?";
-            PreparedStatement pst = con.prepareStatement(sql);
-            pst.setString(1,jtxtUserName.getText());
-            pst.setString(2,jtxtPassword.getText());
-            ResultSet rs = pst.executeQuery();
-            if(rs.next())
-            {   JOptionPane.showMessageDialog(null,"Success");
-              DoctorView info;
-                info = new View.DoctorView();
-             info.setVisible(true);
-               
-                
-               
-
-            }
-            else
-            { JOptionPane.showMessageDialog(null,"OOMB MAIRE");
-            }
-        }
-
-        catch(ClassNotFoundException | SQLException e)
-        {JOptionPane.showMessageDialog(null,e);}
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jbtnLoginActionPerformed
-
     private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed
-        jtxtUserName.setText(null);
-        jtxtPassword.setText(null);// TODO add your handling code here:
+        idField.setText(null);
+        passwordField.setText(null);// TODO add your handling code here:
     }//GEN-LAST:event_jbtnResetActionPerformed
 
     private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnExitActionPerformed
         System.exit(0);        // TODO add your handling code here:
     }//GEN-LAST:event_jbtnExitActionPerformed
 
+    private void jbtnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnLoginActionPerformed
+        doctorHome d = new doctorHome();
+        d.setVisible(true);
+            
+    }//GEN-LAST:event_jbtnLoginActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField idField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JButton jbtnExit;
     private javax.swing.JButton jbtnLogin;
     private javax.swing.JButton jbtnReset;
-    private javax.swing.JPasswordField jtxtPassword;
-    private javax.swing.JTextField jtxtUserName;
+    private javax.swing.JPasswordField passwordField;
     // End of variables declaration//GEN-END:variables
 }

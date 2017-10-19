@@ -11,7 +11,7 @@ import inner.panels.Cardiology;
 import inner.panels.Dermatology;
 import inner.panels.Gen_medicine;
 import inner.panels.Urology;
-import inner.panels.Home;
+//import inner.panels.Home;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
@@ -23,7 +23,7 @@ public class DoctorView extends javax.swing.JFrame {
     Dermatology p3;
     Gen_medicine p4;
     Urology p5;
-    Home p6;
+    //Home p6;
     
     /**
      * Creates new form patientView
@@ -35,7 +35,7 @@ public class DoctorView extends javax.swing.JFrame {
         p3 = new Dermatology();
         p4 = new Gen_medicine();
         p5 = new Urology();
-        p6 = new Home();
+        //p6 = new Home();
          DynamicPanel2.setLayout(layout);
         GridBagConstraints c = new GridBagConstraints();
         c.gridx = 0;
@@ -55,13 +55,13 @@ public class DoctorView extends javax.swing.JFrame {
         DynamicPanel2.add(p5,c);
         c.gridx = 0;
         c.gridy = 0;
-        DynamicPanel2.add(p6,c);
+        //DynamicPanel2.add(p6,c);
         p1.setVisible(false);
         p2.setVisible(false);
         p3.setVisible(false);
          p4.setVisible(false);
          p5.setVisible(false);
-         p6.setVisible(false);
+         //p6.setVisible(false);
     }
 
     /**
@@ -199,7 +199,7 @@ public class DoctorView extends javax.swing.JFrame {
         p3.setVisible(false);
         p4.setVisible(false);
         p5.setVisible(false);
-        p6.setVisible(false);
+        //p6.setVisible(false);
                 // TODO add your handling code here:
     }//GEN-LAST:event_btnCardiologyActionPerformed
 
@@ -209,7 +209,7 @@ public class DoctorView extends javax.swing.JFrame {
         p3.setVisible(false);
         p4.setVisible(true);
         p5.setVisible(false);
-p6.setVisible(false);        // TODO add your handling code here:
+        //p6.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_btnGeneralActionPerformed
 
     private void btnUrologyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUrologyActionPerformed
@@ -218,7 +218,7 @@ p6.setVisible(false);        // TODO add your handling code here:
         p3.setVisible(false);
         p4.setVisible(false);
         p5.setVisible(true);
-p6.setVisible(false);        // TODO add your handling code here:
+        //p6.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_btnUrologyActionPerformed
 
     private void btnENTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnENTActionPerformed
@@ -227,7 +227,7 @@ p6.setVisible(false);        // TODO add your handling code here:
         p3.setVisible(false);
         p4.setVisible(false);
         p5.setVisible(false);
-p6.setVisible(false);        // TODO add your handling code here:
+        //p6.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_btnENTActionPerformed
 
     private void btnDermatologyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDermatologyActionPerformed
@@ -236,7 +236,7 @@ p6.setVisible(false);        // TODO add your handling code here:
         p3.setVisible(true);
         p4.setVisible(false);
         p5.setVisible(false);
-        p6.setVisible(false);        // TODO add your handling code here:
+        //p6.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_btnDermatologyActionPerformed
 
     private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
@@ -245,7 +245,7 @@ p6.setVisible(false);        // TODO add your handling code here:
         p3.setVisible(false);
         p4.setVisible(false);
         p5.setVisible(false);
-        p6.setVisible(true);    // TODO add your handling code here:
+        //p6.setVisible(true);    // TODO add your handling code here:
     }//GEN-LAST:event_btnHomeActionPerformed
 
     /**

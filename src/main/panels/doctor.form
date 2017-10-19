@@ -3,7 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="1a" green="2c" red="3f" type="rgb"/>
+      <Color blue="ff" green="ff" red="ff" type="rgb"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -38,8 +38,8 @@
                       <Component id="jbtnExit" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="jtxtUserName" alignment="0" pref="109" max="32767" attributes="0"/>
-                      <Component id="jtxtPassword" alignment="0" max="32767" attributes="0"/>
+                      <Component id="idField" alignment="0" pref="109" max="32767" attributes="0"/>
+                      <Component id="passwordField" alignment="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="167" max="32767" attributes="0"/>
@@ -52,12 +52,12 @@
               <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jtxtUserName" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="idField" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jtxtPassword" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="passwordField" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="56" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -71,9 +71,9 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="jtxtUserName">
+    <Component class="javax.swing.JTextField" name="idField">
     </Component>
-    <Component class="javax.swing.JPasswordField" name="jtxtPassword">
+    <Component class="javax.swing.JPasswordField" name="passwordField">
     </Component>
     <Component class="javax.swing.JButton" name="jbtnLogin">
       <Properties>
